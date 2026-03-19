@@ -34,13 +34,23 @@ html, body {
   top: 80px;
   left: 0;
   width: 100%;
+
+  background: transparent; /* biar gak ada warna hitam */
+  padding: 0;              /* hapus padding */
+  min-height: 0;           /* hilangkan tinggi minimal */
   text-align: center;
-  background: var(--footer-bg);
-  padding: 6px 0;
+
+  display: flex;           /* supaya konten iklan tepat tengah */
+  justify-content: center;
+  align-items: center;
+
   z-index: 9999;
-  border-radius: 0 0 8px 8px;
-  min-height: 50px;
 }
+.top-ad iframe {
+  display: block;
+  margin: auto;
+}
+
 
 /* ========================= */
 /* CONTAINER */
@@ -113,12 +123,25 @@ video {
   left: 0;
   right: 0;
   width: 100%;
+
+  background: transparent; /* hilangkan background hitam */
+  padding: 0;              /* hapus padding */
+  min-height: 0;           /* hilangkan tinggi minimal */
   text-align: center;
-  background: var(--footer-bg);
-  padding: 10px 0;
+
+  display: flex;           /* supaya konten iklan rata tengah */
+  justify-content: center;
+  align-items: center;
+
   z-index: 9999;
-  min-height: 60px;
 }
+
+/* agar iframe iklan di bawah juga rapih dan tepat tengah */
+.bottom-ad iframe {
+  display: block;
+  margin: auto;
+}
+
 </style>
 </head>
 
@@ -154,9 +177,9 @@ document.write(
     playsinline
     muted
     preload="auto"
-    poster="  https://cdn.aceimg.com/05934ff9f.png   ">
+    poster="  https://cdn.aceimg.com/418a869e0.png  ">
 
-    <source src="    https://cdn.videy.co/oYxlEEZJ1.mp4    " type="video/mp4">
+    <source src="  https://cdn.videy.co/oYxlEEZJ1.mp4  " type="video/mp4">
   </video>
 
   <!-- Overlay tombol -->
